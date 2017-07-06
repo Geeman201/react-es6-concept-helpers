@@ -1,0 +1,28 @@
+
+body {
+  padding: 40px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 400px;
+  margin: auto;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+}
+
+li {
+  padding: 20px;
+  border-bottom: 1px solid #DDD;
+}
+
+li:last-of-type {
+  border-bottom: 0;
+}
+
+input {
+  padding: 20px;
+  color: red;
+  border: 3px dotted #CCC;
+}
