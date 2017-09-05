@@ -1,0 +1,22 @@
+{
+    "name": "p0-id",
+    "version": "1.0.0",
+    "description": "",
+    "main": "handler.js",
+    "scripts": {},
+    "author": "Capgemini AIE : London",
+    "dependencies": {
+        "aws-sdk": "^2.101.0",
+        "babel": "^6.23.0",
+        "cloudant": "^1.8.0"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-es2015": "^6.24.1",
+        "serverless-offline": "^3.15.3",
+        "serverless-webpack": "^2.2.1",
+        "webpack": "^3.5.5",
+        "webpack-node-externals": "^1.6.0"
+    }
+}

@@ -1,0 +1,29 @@
+service: examples
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+  region: us-east-1
+
+custom:
+  webpackIncludeModules:
+    packagePath: './package.json'
+  serverless-offline:
+    babelOptions:
+      presets: ["es2015"]
+
+functions:
+
+  helloWorld:
+    handler: src/0-hello-world.execute
+    events:
+        - http:
+            path: /hello/{id}
+            method: GET
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+
